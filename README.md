@@ -1,2 +1,2 @@
-# portofolio
-Repo for my Portofolio Website
+# Portofolio Webisite
+Menggunakan HTML, CSS, Bootstrap yang menghasilkan website yang responsive
