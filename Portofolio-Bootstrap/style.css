@@ -1,0 +1,158 @@
+:root{
+    --primary-bg:rgb(153, 150, 134);
+    --secondary-bg: #83583f;
+    --tertiary-bg: rgb(216, 215, 189);
+    --card-bg: rgb(150, 110, 70);
+}
+*{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color: var(--primary-bg);
+}
+#home{
+    background:  var(--secondary-bg)
+}
+#about{
+    background: var(--secondary-bg)
+}
+#project{
+    background: var(--tertiary-bg) 
+}
+#contact{
+    background-color: var(--primary-bg);
+}
+.navbar{
+    max-width: 100vw;
+}
+    
+.nav-item a{
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    border: 1px solid transparent;
+}
+.nav-item a:hover{
+    color: black;
+    background-color: #a57759;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.nav-link.active{
+    background-color: #a57759!important; 
+    color: black!important; 
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    animation: slide-right 2s ease-out;
+}
+.desci{
+    position: relative;
+    animation: slide-left 2s ease-out;
+}
+.card{
+    background-color: var(--secondary-bg);
+}
+.card:hover{
+    position: relative;
+    transform: translateY(-5px) scale(1.005);
+    box-shadow: 0 24px 36px rgb(0,0,0,0.11), 0 24px 46px var(--card-bg);
+    transition: transform 0.5s;
+    
+}
+.card-text{
+    color : var(--primary-bg);
+}
+
+@media (min-width: 769px) {
+    @keyframes slide-right {
+        0%{
+            opacity: 0%;
+            left: -1000px;
+        }
+        
+        100%{
+            opacity: 100%;
+            left:0;
+        }
+    }
+    @keyframes slide-left {
+        0%{
+            opacity: 0%;
+            right: -1000px;
+        }
+        
+        100%{
+            opacity: 100%;
+            right:0;
+        }
+    }
+    .contact-form{
+        border-left: 1px solid black;
+    }
+}
+@media (max-width: 769px) and (min-width: 481px) {
+    @keyframes slide-right {
+        0%{
+            opacity: 0%;
+            left: -769px;
+        }
+        
+        100%{
+            opacity: 100%;
+            left:0;
+        }
+    }
+    @keyframes slide-left {
+        0%{
+            opacity: 0%;
+            right: -769px;
+        }
+        
+        100%{
+            opacity: 100%;
+            right:0;
+        }
+    }
+    .contact-form{
+        border-left: 1px solid black;
+    }
+}
+@media (max-width: 481px) {
+    @keyframes slide-right {
+        0%{
+            opacity: 0%;
+            left: -481px;
+        }
+        
+        100%{
+            opacity: 100%;
+            left:0;
+        }
+    }
+    @keyframes slide-left {
+        0%{
+            opacity: 0%;
+            right: -481px;
+        }
+        
+        100%{
+            opacity: 100%;
+            right:0;
+        }
+    }
+    .contact-form{
+        border-top: 1px solid black;
+        margin: 15px
+    }
+}
+
+
